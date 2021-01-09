@@ -1,0 +1,9 @@
+clear all;
+close all;
+r= 0.02;
+t= -5:r:5;
+N= 200;
+w= 2*pi;
+k= -N:N;
+w= k*w/N;
+f1= 1/2*exp;

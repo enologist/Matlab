@@ -1,0 +1,17 @@
+clear all;
+close all;
+h= 0.001;
+t= -3:h:3;
+ft= 0.5*exp(-2*t);
+subplot(3,1,1);
+plot(t,ft);
+title('f(t)');
+y1= diff(ft)* 1/h;
+subplot(3,1,2);
+plot(t(1:length(t) - 1),y1);
+title('the differentiation of f(t)');
+ft2= 0.5*exp(-2*(t-1));
+y2= diff(ft2)* 1/h;
+subplot(3,1,3);
+plot(t(1:length(t) - 1),y2);
+title('the differentiation of f(t-1)');
